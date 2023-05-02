@@ -10,6 +10,23 @@ h2 {
   font-size: 3rem;
   line-height: 1.5;
 }
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 /* *********** Navbar ************** */
 
 .navbar{
@@ -41,10 +58,9 @@ h2 {
 }
 
 #title {
-  background-color: #ff4c68;
+  /* background-color: #ff4c68; */
   color: white;
 }
-
 .container-fluid {
   padding: 3% 15% 7%;
 }
@@ -58,6 +74,9 @@ h2 {
     background-color: #fff;
     position: relative;
     z-index: 1;
+}
+[data-bs-theme=dark] #features{
+    background-color: #212529;
 }
 .feature-desc{
   color: #8f8f8f;
@@ -78,7 +97,7 @@ h2 {
 /* ************************** Testimonials ********************************* */
 #testimonials{
   text-align: center;
-  background-color: #ef8172;
+  /* background-color: #ef8172; */
   color: #fff;
 }
 .testimonial-text{
@@ -97,7 +116,7 @@ h2 {
 }
 /* ************************** Press ********************************** */
 #press{
-  background-color: #ef8172;
+  /* background-color: #ef8172; */
   text-align: center;
   padding-bottom: 3%;
 }
@@ -125,7 +144,7 @@ h2 {
 }
 /* ************************** CTA ************************************** */
 #cta{
-  background-color: #ff4c68;
+  /* background-color: #ff4c68; */
   text-align: center;
   padding: 3rem;
 }
